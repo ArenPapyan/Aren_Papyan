@@ -7,7 +7,7 @@ site_url: http://fibasile.fabcloud.io/fabacademy-student-template/
 
 nav:
   - Տուն: index.md
-  - Իմ մասին: about\index.md
+  - Իմ մասին: about/index.md
   - Առաջադրանքներ:
       - Շաբաթ 01: assignments/week01.md
       - Շաբաթ 02: assignments/week02.md
