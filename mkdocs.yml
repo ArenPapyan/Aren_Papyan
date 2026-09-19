@@ -47,7 +47,7 @@ extra:
 
 theme:
   name: material
-  language: hy
+  language:  en
   palette:
     primary: deep
     accent: indigo
