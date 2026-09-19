@@ -1,15 +1,41 @@
-# Replace the text below to customize your site
 site_name: Արեն Պապյան - Fab Academy
-site_description: Fab Academy documentation site for Your Name
-site_author: Your name
-copyright: Copyright 2022 Your name - Creative Commons Attribution Non Commercial
+site_description: Fab Academy documentation site
+site_author: Արեն Պապյան
+copyright: Copyright 2026 Արեն Պապյան - Creative Commons Attribution Non Commercial
 
 site_url: http://fibasile.fabcloud.io/fabacademy-student-template/
 
+nav:
+  - Տուն: index.md
+  - Իմ մասին: about\index.md
+  - Առաջադրանքներ:
+      - Շաբաթ 01: assignments/week01.md
+      - Շաբաթ 02: assignments/week02.md
+      - Շաբաթ 03: assignments/week03.md
+      - Շաբաթ 04: assignments/week04.md
+      - Շաբաթ 05: assignments/week05.md
+      - Շաբաթ 06: assignments/week06.md
+      - Շաբաթ 07: assignments/week07.md
+      - Շաբաթ 08: assignments/week08.md
+      - Շաբաթ 09: assignments/week09.md
+      - Շաբաթ 10: assignments/week10.md
+      - Շաբաթ 11: assignments/week11.md
+      - Շաբաթ 12: assignments/week12.md
+      - Շաբաթ 13: assignments/week13.md
+      - Շաբաթ 14: assignments/week14.md
+      - Շաբաթ 15: assignments/week15.md
+      - Շաբաթ 16: assignments/week16.md
+      - Շաբաթ 17: assignments/week17.md
+      - Շաբաթ 18: assignments/week18.md
+      - Շաբաթ 19: assignments/week19.md
+      - Շաբաթ 20: assignments/week20.md
+  - Նախագծեր:
+    - Final Project: projects/final-project.md
+    - Sample Project: projects/sample-project.md
+
 extra:
-  # Set your own social media below (or remove)
+
   social:
-    # For other social icons at https://squidfunk.github.io/mkdocs-material/setup/adding-social-links/
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/fabacademany
     - icon: fontawesome/brands/facebook
@@ -21,12 +47,11 @@ extra:
 
 theme:
   name: material
+  language: hy
   palette:
-    # try other colors https://squidfunk.github.io/mkdocs-material/getting-started/#primary-colors
     primary: deep
     accent: indigo
   font:
-    # See available fonts at https://fonts.google.com/
     text: Ubuntu
     code: Ubuntu Mono
   icon:
@@ -40,7 +65,6 @@ plugins:
   - search
   - git-revision-date-localized:
       fallback_to_build_date: true
-      # Read more: https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/options/#enabled
       enabled: !ENV [ENABLED_GIT_REVISION_DATE, False]
 
 markdown_extensions:
