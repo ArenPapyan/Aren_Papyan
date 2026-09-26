@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Another project
 
 ### Vimeo

@@ -1,0 +1,976 @@
+/* ==========================================================
+   AREN PAPYAN — FAB SCHOOL
+   FULL CUSTOM DESIGN
+   ========================================================== */
+
+
+/* ==========================================================
+   COLOR SYSTEM
+   ========================================================== */
+
+[data-md-color-scheme="default"] {
+    --bg: #f5f7fc;
+    --surface: #ffffff;
+    --surface-2: #f8f9fe;
+
+    --text: #273248;
+    --text-soft: #69758c;
+
+    --primary: #294493;
+    --primary-2: #3c5bc0;
+
+    --accent: #7554f6;
+    --accent-2: #9278ff;
+
+    --line: #e4e8f2;
+
+    --shadow-sm:
+        0 5px 18px rgba(35, 52, 90, 0.06);
+
+    --shadow-md:
+        0 12px 35px rgba(35, 52, 90, 0.10);
+}
+
+
+[data-md-color-scheme="slate"] {
+    --bg: #101522;
+    --surface: #191f2d;
+    --surface-2: #20283a;
+
+    --text: #edf0f7;
+    --text-soft: #a9b2c5;
+
+    --primary: #91a4ff;
+    --primary-2: #7088ed;
+
+    --accent: #a285ff;
+    --accent-2: #b49eff;
+
+    --line: #30394d;
+
+    --shadow-sm:
+        0 5px 18px rgba(0, 0, 0, 0.22);
+
+    --shadow-md:
+        0 12px 35px rgba(0, 0, 0, 0.30);
+}
+
+
+/* ==========================================================
+   GLOBAL
+   ========================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(
+            circle at 0% 15%,
+            rgba(117, 84, 246, 0.10),
+            transparent 26%
+        ),
+        radial-gradient(
+            circle at 100% 82%,
+            rgba(41, 68, 147, 0.08),
+            transparent 27%
+        ),
+        var(--bg);
+
+    color: var(--text);
+}
+
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+.md-header {
+    background:
+        linear-gradient(
+            115deg,
+            #1b3373 0%,
+            #294593 45%,
+            #6044d4 100%
+        );
+
+    box-shadow:
+        0 4px 20px rgba(25, 40, 85, 0.18);
+}
+
+.md-header__title {
+    font-weight: 800;
+}
+
+.md-header__button {
+    transition: transform .2s ease;
+}
+
+.md-header__button:hover {
+    transform: scale(1.08);
+}
+
+
+/* Search */
+
+.md-search__form {
+    border-radius: 16px;
+
+    background:
+        rgba(255,255,255,.13);
+
+    border:
+        1px solid rgba(255,255,255,.10);
+
+    backdrop-filter: blur(10px);
+}
+
+.md-search__input {
+    color: #fff;
+}
+
+
+/* ==========================================================
+   MAIN GRID
+   ========================================================== */
+
+.md-grid {
+    max-width: 1450px;
+}
+
+
+/* ==========================================================
+   LEFT NAVIGATION CARD
+   ========================================================== */
+
+.md-sidebar--primary {
+    width: 245px;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap {
+    margin-top: 22px;
+    margin-bottom: 22px;
+
+    background: var(--surface);
+
+    border:
+        1px solid var(--line);
+
+    border-radius: 18px;
+
+    box-shadow: var(--shadow-sm);
+
+    padding: 14px 10px;
+}
+
+
+/* Nav title */
+
+.md-sidebar--primary .md-nav__title {
+    color: var(--primary);
+
+    font-weight: 800;
+
+    padding-bottom: 9px;
+}
+
+
+/* Nav links */
+
+.md-sidebar--primary .md-nav__link {
+    border-radius: 9px;
+
+    padding:
+        6px 10px;
+
+    margin:
+        2px 0;
+
+    color: var(--text-soft);
+
+    font-size: 14px;
+
+    transition:
+        background .18s ease,
+        color .18s ease,
+        transform .18s ease;
+}
+
+.md-sidebar--primary .md-nav__link:hover {
+    background:
+        rgba(117,84,246,.08);
+
+    color: var(--primary);
+
+    transform: translateX(2px);
+}
+
+.md-sidebar--primary .md-nav__link--active {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(117,84,246,.16),
+            rgba(117,84,246,.04)
+        );
+
+    color: var(--accent) !important;
+
+    font-weight: 800;
+}
+
+
+/* ==========================================================
+   CENTER CONTENT CARD
+   ========================================================== */
+
+.md-content {
+    max-width: 900px;
+}
+
+.md-content__inner {
+    margin-top: 22px;
+    margin-bottom: 32px;
+
+    background: var(--surface);
+
+    border:
+        1px solid var(--line);
+
+    border-radius: 24px;
+
+    padding:
+        42px 48px 55px;
+
+    box-shadow: var(--shadow-md);
+
+    position: relative;
+}
+
+
+/* little decorative glow */
+
+.md-content__inner::before {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    top: -60px;
+    right: -60px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(117,84,246,.12),
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+
+/* ==========================================================
+   TYPOGRAPHY
+   ========================================================== */
+
+.md-typeset {
+    font-size: 16px;
+
+    line-height: 1.82;
+
+    color: var(--text);
+}
+
+.md-typeset p {
+    color: var(--text);
+}
+
+
+/* ==========================================================
+   H1
+   ========================================================== */
+
+.md-typeset h1 {
+    color: var(--primary);
+
+    font-size: 2.35rem;
+
+    font-weight: 900;
+
+    line-height: 1.22;
+
+    margin:
+        0 0 32px;
+
+    padding-bottom: 16px;
+
+    border-bottom:
+        3px solid var(--accent);
+}
+
+
+/* ==========================================================
+   SECTION HEADINGS
+   ========================================================== */
+
+.md-typeset h2 {
+    color: var(--primary);
+
+    font-size: 1.60rem;
+
+    font-weight: 850;
+
+    margin-top: 50px;
+
+    margin-bottom: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding-bottom: 10px;
+
+    border-bottom:
+        2px solid var(--accent);
+}
+
+
+/* automatic decorative icon */
+
+.md-typeset h2::before {
+    content: "✦";
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 39px;
+    height: 39px;
+
+    flex: 0 0 39px;
+
+    border-radius: 12px;
+
+    color: #fff;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--accent),
+            var(--accent-2)
+        );
+
+    font-size: 18px;
+
+    box-shadow:
+        0 6px 14px rgba(117,84,246,.22);
+}
+
+
+/* ==========================================================
+   H3
+   ========================================================== */
+
+.md-typeset h3 {
+    color: var(--primary);
+
+    font-weight: 800;
+}
+
+
+/* ==========================================================
+   LINK DESIGN
+   ========================================================== */
+
+.md-typeset a {
+    color: var(--accent);
+
+    font-weight: 650;
+
+    transition: color .15s ease;
+}
+
+.md-typeset a:hover {
+    color: var(--primary);
+}
+
+
+/* ==========================================================
+   IMAGES
+   ========================================================== */
+
+.md-typeset img {
+    display: block;
+
+    max-width: 94%;
+
+    height: auto;
+
+    margin:
+        26px auto;
+
+    border-radius: 16px;
+
+    border:
+        1px solid var(--line);
+
+    box-shadow:
+        0 8px 24px rgba(30,45,80,.10);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.md-typeset img:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 13px 32px rgba(30,45,80,.16);
+}
+
+
+/* ==========================================================
+   TOOL CARDS
+   ========================================================== */
+
+.tool-cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 16px;
+
+    margin:
+        26px 0 28px;
+}
+
+.tool-card {
+    position: relative;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--surface),
+            var(--surface-2)
+        );
+
+    border:
+        1px solid var(--line);
+
+    border-radius: 18px;
+
+    padding:
+        20px;
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform .22s ease,
+        box-shadow .22s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 28px rgba(35,52,90,.12);
+}
+
+.tool-card h3 {
+    margin-top: 0;
+
+    color: var(--primary);
+}
+
+.tool-card p {
+    color: var(--text-soft);
+
+    font-size: 14px;
+}
+
+
+/* ==========================================================
+   ICON CIRCLE
+   ========================================================== */
+
+.icon-circle {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    margin-bottom: 12px;
+
+    color: #fff;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--accent),
+            var(--primary-2)
+        );
+
+    font-size: 21px;
+
+    box-shadow:
+        0 7px 15px rgba(76,70,180,.20);
+}
+
+
+/* ==========================================================
+   INFO BOX
+   ========================================================== */
+
+.info-box {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(117,84,246,.10),
+            rgba(41,68,147,.05)
+        );
+
+    border:
+        1px solid rgba(117,84,246,.18);
+
+    border-radius: 17px;
+
+    padding:
+        18px 20px;
+
+    margin:
+        25px 0;
+
+    box-shadow: var(--shadow-sm);
+}
+
+.info-box strong {
+    color: var(--primary);
+}
+
+
+/* ==========================================================
+   STEP CARDS
+   ========================================================== */
+
+.steps {
+    display: grid;
+
+    gap: 14px;
+
+    margin:
+        25px 0;
+}
+
+.step {
+    display: flex;
+
+    gap: 15px;
+
+    align-items: flex-start;
+
+    padding:
+        16px;
+
+    border:
+        1px solid var(--line);
+
+    border-radius: 15px;
+
+    background: var(--surface-2);
+}
+
+.step-number {
+    min-width: 36px;
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #fff;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--accent),
+            var(--accent-2)
+        );
+
+    font-weight: 800;
+}
+
+
+/* ==========================================================
+   BLOCKQUOTE
+   ========================================================== */
+
+.md-typeset blockquote {
+    border-left:
+        4px solid var(--accent);
+
+    background:
+        rgba(117,84,246,.06);
+
+    border-radius:
+        0 12px 12px 0;
+
+    padding:
+        14px 18px;
+
+    color: var(--text-soft);
+}
+
+
+/* ==========================================================
+   ADMONITIONS
+   ========================================================== */
+
+.md-typeset .admonition,
+.md-typeset details {
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 18px rgba(35,52,90,.06);
+
+    border:
+        1px solid var(--line);
+}
+
+
+/* ==========================================================
+   INLINE CODE
+   ========================================================== */
+
+.md-typeset code {
+    background:
+        rgba(117,84,246,.10);
+
+    color:
+        var(--accent);
+
+    padding:
+        2px 6px;
+
+    border-radius: 6px;
+}
+
+
+/* ==========================================================
+   CODE BLOCK
+   ========================================================== */
+
+.md-typeset pre {
+    border-radius: 14px;
+
+    border:
+        1px solid var(--line);
+
+    overflow: hidden;
+}
+
+
+/* ==========================================================
+   RIGHT TOC CARD
+   ========================================================== */
+
+.md-sidebar--secondary {
+    width: 275px;
+}
+
+.md-sidebar--secondary .md-sidebar__scrollwrap {
+    margin-top: 22px;
+}
+
+.md-sidebar--secondary .md-nav {
+    background: var(--surface);
+
+    border:
+        1px solid var(--line);
+
+    border-radius: 18px;
+
+    padding:
+        14px 12px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+.md-sidebar--secondary .md-nav__title {
+    color: var(--primary);
+
+    font-weight: 800;
+
+    font-size: 15px;
+}
+
+.md-sidebar--secondary .md-nav__link {
+    color: var(--text-soft);
+
+    padding:
+        6px 9px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+}
+
+.md-sidebar--secondary .md-nav__link:hover {
+    background:
+        rgba(117,84,246,.07);
+}
+
+.md-sidebar--secondary .md-nav__link--active {
+    color: var(--accent) !important;
+
+    font-weight: 750;
+}
+
+
+/* ==========================================================
+   HR
+   ========================================================== */
+
+.md-typeset hr {
+    border: 0;
+
+    border-top:
+        1px solid var(--line);
+
+    margin:
+        36px 0;
+}
+
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+.md-footer {
+    background:
+        linear-gradient(
+            110deg,
+            #1b3373,
+            #294593,
+            #6044d4
+        );
+}
+
+.md-footer-meta {
+    background:
+        rgba(10,20,55,.28);
+}
+
+
+/* ==========================================================
+   TOP BUTTON
+   ========================================================== */
+
+.md-top {
+    background: var(--accent);
+
+    border-radius: 10px;
+}
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media screen and (max-width: 1100px) {
+
+    .md-sidebar--secondary {
+        display: none;
+    }
+
+    .md-grid {
+        max-width: 95%;
+    }
+
+    .tool-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    .md-content__inner {
+        padding:
+            28px 20px 40px;
+
+        border-radius: 17px;
+    }
+
+    .md-typeset {
+        font-size: 15px;
+    }
+
+    .md-typeset h1 {
+        font-size: 1.85rem;
+    }
+
+    .md-typeset h2 {
+        font-size: 1.35rem;
+    }
+
+    .tool-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ==========================================================
+   TOP NAVIGATION AND PAGE POLISH
+   ========================================================== */
+
+/* Keep the main navigation in a horizontal bar on desktop. */
+@media screen and (min-width: 1220px) {
+    .md-sidebar--primary {
+        display: none;
+    }
+
+    .md-main__inner {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .md-content {
+        flex: 1 1 auto;
+        min-width: 0;
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
+    .md-sidebar--secondary {
+        flex: 0 0 245px;
+        width: 245px;
+        margin-top: 22px;
+    }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1219px) {
+    .md-content {
+        min-width: 0;
+    }
+
+    .md-sidebar--secondary {
+        flex: 0 0 220px;
+        width: 220px;
+    }
+}
+
+.md-tabs {
+    background: linear-gradient(110deg, #1b3373, #294593 48%, #6044d4);
+    box-shadow: 0 7px 18px rgba(25, 40, 85, 0.14);
+}
+
+.md-tabs__link {
+    margin: 5px 4px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-weight: 700;
+    opacity: 0.84;
+    transition: background .18s ease, opacity .18s ease, transform .18s ease;
+}
+
+.md-tabs__link:hover {
+    background: rgba(255, 255, 255, 0.13);
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.md-tabs__link--active {
+    background: rgba(255, 255, 255, 0.16);
+    opacity: 1;
+}
+
+.md-typeset h2::before {
+    content: "\2726";
+}
+
+.tool-card {
+    overflow: hidden;
+}
+
+.tool-card h3 a {
+    text-decoration: none;
+}
+
+.project-cards .tool-card h3 a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.tool-card:focus-within {
+    outline: 3px solid var(--accent-2);
+    outline-offset: 3px;
+}
+
+.assignment-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--text) !important;
+    font-weight: 400 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.assignment-card__title {
+    margin: 2px 0 8px;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.assignment-card__description {
+    color: var(--text-soft);
+    font-size: 14px;
+}
+
+.assignment-card:focus-visible {
+    outline: 3px solid var(--accent-2);
+    outline-offset: 3px;
+}
+
+.tool-card h3 a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.project-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media screen and (max-width: 1100px) {
+    .tool-cards,
+    .project-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .tool-cards,
+    .project-cards {
+        grid-template-columns: 1fr;
+    }
+}

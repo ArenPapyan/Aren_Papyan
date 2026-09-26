@@ -1,61 +1,46 @@
-# 2. Project management
+# 2. Ժպիտ հայտնաբերող տեսախցիկ
+Այս Շաբաթ իմ աշխատանքը կենտրոնացած է եղել հիմնականում ժպիտ հայտնաբերող տեսախցիկ սարքելու վրա։
 
-This week I worked on defining my final project idea and started to getting used to the documentation process.
+## Նպատակ
 
-## Research
+Այս աշխատանքի նպատակն էր ստեղծել ժպիտը հայտնաբերող ծրագիր, որը Python ծրագրավորման լեզվի միջոցով տեսախցիկի պատկերից կարող է հայտնաբերել մարդու դեմքը և որոշել՝ արդյոք նա ժպտում է։
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+Աշխատանքի այլ կարևոր կետ էր նաև առաջադրանքը կատարել տարբեր ԱԲ գործիքների օգնությամբ՝ հետագայում ԱԲ գործիքները համեմատելու համար։ Ես այն կատարել եմ ChatGPT,Gemini,DeepSeek և Copilot Ai-ներոբ։ Բոլոր 4 ԱԲ-ներին տվել եմ նույն prompt-ը, այնուհետև համեմատել եմ նրանց առաջարկած լուծումները, կոդը, բացատրությունները և աշխատանքի ընթացքում առաջացած խնդիրների լուծման եղանակները։
 
-> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+## Օգտագործված հիմնական prompt-ը
 
-## Useful links
+Բոլոր ԱԲ-ներին տվել եմ նույն հետևյալ հրահանգը․
 
-- [Jekyll](http://jekyll.org)
-- [Google](http://google.com)
-- [Markdown](https://en.wikipedia.org/wiki/Markdown)
+«Անհրաժեշտ է ստեղծել ժպիտը հայտնաբերող ծրագիր։ Այն պետք է գրված լինի Python ծրագրով։ Գրելու ընթացքում ամեն ինչ դետալիզացված պետք է ներկայացվի, որպեսզի լինի հասկանալի։»
 
-## Code Example
+Այդ կերպ հնարավոր եղավ ստանալ տարբեր ԱԲ-ների պատասխանները նույն պայմաններում և ավելի ճիշտ համեմատել դրանց աշխատանքը։ Սակայն կա նաև այլ կարևոր կետ՝ ես չեմ տվել ինչ որ սահմանափակում, այսինքն՝ ԱԲ-ն ազատ էր ընտրելու իր կոդը գրելու ձևը։
+Կարևոր է նաև նշել, որ բոլոր ԱԲ-ների մոտ մինչև հարցնելը ավելացրել եմ ավելի երկար մտածելու տարբերակը։
 
-Use the three backticks to separate code.
+## Անհրաժեշտ լինքեր
+Տրված են բոլոր ԱԲ-ների լինքերը։ Անհրաժեշտության դեպքում կարող եք օգտագործել։ <br>
+[ChatGPT](https://chatgpt.com/) <br>
+[Gemini](https://gemini.google.com/app) <br>
+[DeepSeek](https://www.deepseek.com/en/) <br>
+[Copilot](https://copilot.microsoft.com/) <br>
 
-```
-// the setup function runs once when you press reset or power the board
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-}
+## ԱԲ-ների կոդերը
+Տրված են բոլոր ԱԲ-ների գրած կոդերը այս առաջադրանքի շուրջ՝ իրենց մեկնաբանություններով։ Անհրաժեշտության դեպքում կարող եք ներբեռնել և փորձել: <br>
+[SmileFAB ChatGPT](../SmileDetector/SmileFAB(ChatGPT).py) <br>
+[SmileFAB Gemini](../SmileDetector/SmileFAB(Gemini).py) <br>
+[SmileFAB DeepSeek](../SmileDetector/SmileFAB(DeepSeek).py) <br>
+[SmileFAB Copilot](../SmileDetector/SmileFAB(Copilot).py) <br>
 
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
-}
-```
+## Համեմատություն
 
-## Gallery
+1․ChatGPT
+Այս ԱԲ-ին տալուց հետո նա տվեց ինձ պատրաստի կոդը իր բացատրություններով։
+Կոդի մեջ հիմնական խնդիրը այն էր, որ այն համակարգիչը չծանրաբեռնելու համար այն սաքրում էր սև ու սպիտակ։ Դրա պատճառով ցանկացած սպիտակ իր տեսնելիս ընդունում էր որպես ժպիտ։
 
-![](../images/sample-photo.jpg)
+2․Gemini
+Հիմնական նույն խնդիրը, ինչ 1-ին ԱԲ-ում։
 
-## Video
+3․DeepSeek
+Հիմնական նույն խնդիրը, ինչ 1-ին ԱԲ-ում։
 
-### From Vimeo
-
-<iframe src="https://player.vimeo.com/video/10048961" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/10048961">Sound Waves</a> from <a href="https://vimeo.com/radarboy">George Gally (Radarboy)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-
-### From Youtube
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jjNgJFemlC4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-## 3D Models
-
-<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Dita&#39;s Gown</a>
-    by <a href="https://sketchfab.com/francisbitontistudio?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Francis Bitonti Studio</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-</p>
-</div>
+4․Copilot
+Չաշխատեց ընդհանրապես

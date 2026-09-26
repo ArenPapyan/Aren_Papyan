@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Student Agreement
 
 This page is a placeholder.
